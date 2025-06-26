@@ -2,7 +2,7 @@
 A compact and cost-effective autonomous car prototype built using Raspberry Pi 4. This system integrates computer vision for lane detection, YOLOv5 for object detection, and ultrasonic sensors for obstacle avoidance — all controlled via a Flask-based web dashboard for live monitoring.
 
 
-#📌 Table of Contents
+# Table of Contents
 About the Project
 
 Features
@@ -96,7 +96,7 @@ source env/bin/activate\
 pip install -r requirements.txt\
 
 \# Run the application\
-python main.py\
+python Final_Code.py
 
 # How It Works
 Webcam captures real-time road view.
