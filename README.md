@@ -2,7 +2,7 @@
 A compact and cost-effective autonomous car prototype built using Raspberry Pi 4. This system integrates computer vision for lane detection, YOLOv5 for object detection, and ultrasonic sensors for obstacle avoidance — all controlled via a Flask-based web dashboard for live monitoring.
 
 
-📌 Table of Contents
+#📌 Table of Contents
 About the Project
 
 Features
@@ -75,8 +75,6 @@ MJPEG – Efficient video streaming
 VPN – Secure remote access
 
 # System Architecture
-Copy\
-Edit\
 Camera → OpenCV (Lane Detection)\
        → YOLOv5n (Object Detection)\
 Ultrasonic Sensors → Obstacle Distance\
