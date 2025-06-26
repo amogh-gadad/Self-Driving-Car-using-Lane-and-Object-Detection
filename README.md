@@ -113,6 +113,8 @@ python Final_Code.py
 
 - Web interface supports remote streaming and monitoring.
 
+![Project Photo](https://github.com/user-attachments/assets/2e644d06-97e1-40e4-a0f2-6300b93d993c)
+
 # Future Scope
 - Integrate GPS for navigation over large areas.
 
