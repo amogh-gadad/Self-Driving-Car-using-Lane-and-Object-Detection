@@ -1,6 +1,8 @@
 # Self-Driving Car using Lane and Object Detection
 A compact and cost-effective autonomous car prototype built using Raspberry Pi 4. This system integrates computer vision for lane detection, YOLOv5 for object detection, and ultrasonic sensors for obstacle avoidance all controlled via a Flask-based web dashboard for live monitoring.
 
+---
+
 ## About the Project
 This project demonstrates a real-time self-driving car prototype that can:
 
@@ -13,6 +15,8 @@ Avoid collisions using ultrasonic sensors.
 Stream live video to a web browser via Flask and VPN.
 
 Navigate autonomously based on computer vision and distance sensing.
+
+---
 
 ## Features
 ✅ Lane detection using grayscale + ROI masking
@@ -27,6 +31,8 @@ Navigate autonomously based on computer vision and distance sensing.
 
 ✅ Threaded video processing to reduce lag
 
+---
+
 ## Hardware Used
 | Component |	Description |
 | --------- | ----------- |
@@ -38,6 +44,8 @@ Navigate autonomously based on computer vision and distance sensing.
 | Custom Chassis | 6-wheel robot base |
 | Power Supply | 5V / 3.3V regulated input |
 
+---
+
 ## Hardware Pin Mapping (Raspberry Pi GPIO)
 | Component | GPIO Pins |
 | --------- | --------- |
@@ -47,6 +55,8 @@ Navigate autonomously based on computer vision and distance sensing.
 | Ultrasonic Front | TRIG: 5, ECHO: 6 |
 | Ultrasonic Left | TRIG: 19, ECHO: 26 |
 | Ultrasonic Right | TRIG: 20, ECHO: 21 |
+
+---
 
 ## Software Stack
 Python 3
@@ -63,13 +73,19 @@ MJPEG – Efficient video streaming
 
 VPN – Secure remote access
 
+---
+
 ## System Architecture
+
 Camera → OpenCV (Lane Detection)\
        → YOLOv5n (Object Detection)\
 Ultrasonic Sensors → Obstacle Distance\
 Raspberry Pi 4 → Control Algorithm (Python)\
               → L298N Motor Driver\
               → Flask Web Interface → Browser Dashboard\
+              
+---
+
 ## Installation
 ```
 # Clone this repository
@@ -87,6 +103,8 @@ pip install -r requirements.txt
 python Final_Code.py
 ```
 
+---
+
 ## How It Works
 1. Webcam captures real-time road view.
 
@@ -102,6 +120,8 @@ python Final_Code.py
 
 7. Live camera feed is served via Flask over VPN.
 
+---
+
 ## Results
 - Accurate lane tracking in controlled environments.
 
@@ -115,6 +135,8 @@ python Final_Code.py
 
 ![Project Photo](https://github.com/user-attachments/assets/2e644d06-97e1-40e4-a0f2-6300b93d993c)
 
+---
+
 ## Future Scope
 - Integrate GPS for navigation over large areas.
 
@@ -126,14 +148,16 @@ python Final_Code.py
 
 - Add telemetry and remote control features to the web UI.
 
+---
+
 ## Team
-Amogh M Gadad (02FE22BEC006)
+Amogh M Gadad 
 
-Amruta Biradarpatil (02FE22BEC008)
+Amruta Biradarpatil 
 
-Ashtami Hosapeti (02FE22BEC012)
+Ashtami Hosapeti 
 
-Naman Timmapur (02FE22BEC039)
+Naman Timmapur 
 
 Department of Electronics and Communication Engineering
 
