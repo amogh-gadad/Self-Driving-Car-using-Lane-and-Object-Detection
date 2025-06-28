@@ -1,7 +1,7 @@
 # Self-Driving Car using Lane and Object Detection
 A compact and cost-effective autonomous car prototype built using Raspberry Pi 4. This system integrates computer vision for lane detection, YOLOv5 for object detection, and ultrasonic sensors for obstacle avoidance all controlled via a Flask-based web dashboard for live monitoring.
 
-# About the Project
+## About the Project
 This project demonstrates a real-time self-driving car prototype that can:
 
 Detect road lanes using a webcam and OpenCV.
@@ -14,7 +14,7 @@ Stream live video to a web browser via Flask and VPN.
 
 Navigate autonomously based on computer vision and distance sensing.
 
-# Features
+## Features
 ✅ Lane detection using grayscale + ROI masking
 
 ✅ Lightweight YOLOv5n for fast object detection
@@ -27,7 +27,7 @@ Navigate autonomously based on computer vision and distance sensing.
 
 ✅ Threaded video processing to reduce lag
 
-# Hardware Used
+## Hardware Used
 | Component |	Description |
 | --------- | ----------- |
 | Raspberry Pi 4 (4GB) | Central processing unit |
@@ -38,7 +38,7 @@ Navigate autonomously based on computer vision and distance sensing.
 | Custom Chassis | 6-wheel robot base |
 | Power Supply | 5V / 3.3V regulated input |
 
-# Hardware Pin Mapping (Raspberry Pi GPIO)
+## Hardware Pin Mapping (Raspberry Pi GPIO)
 | Component | GPIO Pins |
 | --------- | --------- |
 | L298N IN1, IN2 | GPIO 17, 18 |
@@ -48,7 +48,7 @@ Navigate autonomously based on computer vision and distance sensing.
 | Ultrasonic Left | TRIG: 19, ECHO: 26 |
 | Ultrasonic Right | TRIG: 20, ECHO: 21 |
 
-# Software Stack
+## Software Stack
 Python 3
 
 OpenCV – Lane detection
@@ -63,14 +63,14 @@ MJPEG – Efficient video streaming
 
 VPN – Secure remote access
 
-# System Architecture
+## System Architecture
 Camera → OpenCV (Lane Detection)\
        → YOLOv5n (Object Detection)\
 Ultrasonic Sensors → Obstacle Distance\
 Raspberry Pi 4 → Control Algorithm (Python)\
               → L298N Motor Driver\
               → Flask Web Interface → Browser Dashboard\
-# Installation
+## Installation
 ```
 # Clone this repository
 git clone https://github.com/amogh-gadad/self-driving-car-rpi.git
@@ -87,7 +87,7 @@ pip install -r requirements.txt
 python Final_Code.py
 ```
 
-# How It Works
+## How It Works
 1. Webcam captures real-time road view.
 
 2. OpenCV processes the frames for lane boundaries.
@@ -102,7 +102,7 @@ python Final_Code.py
 
 7. Live camera feed is served via Flask over VPN.
 
-# Results
+## Results
 - Accurate lane tracking in controlled environments.
 
 - Real-time object recognition with minimal latency.
@@ -115,7 +115,7 @@ python Final_Code.py
 
 ![Project Photo](https://github.com/user-attachments/assets/2e644d06-97e1-40e4-a0f2-6300b93d993c)
 
-# Future Scope
+## Future Scope
 - Integrate GPS for navigation over large areas.
 
 - Add LiDAR or infrared sensors for improved detection.
@@ -126,7 +126,7 @@ python Final_Code.py
 
 - Add telemetry and remote control features to the web UI.
 
-# Team
+## Team
 Amogh M Gadad (02FE22BEC006)
 
 Amruta Biradarpatil (02FE22BEC008)
